@@ -20,7 +20,7 @@ this is shown in this architectural diagram below:
 The book will take a step by step apporach to deploy this application first using containers
 on the localhost using docker-compose.
 Next the application will be deployed to a local kubernetes cluster running on the development machine
-Then we wil deploy it to a cluster running in Azure, using AKS
+Then we wil deploy it to a cluster running in Azure, using A
 
 
 
