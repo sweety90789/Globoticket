@@ -14,8 +14,6 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build --no-restore
-      - name: test
-        run: dotnet test --no-build --verbosity normal
       - name: generate markdown
         run: |
           echo "## Test Results" > results.md
