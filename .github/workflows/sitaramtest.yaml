@@ -16,3 +16,9 @@ jobs:
         run: dotnet build --no-restore
       - name: test
         run: dotnet test --no-build --verbosity normal
+      - name: generate markdown
+        run: |
+          echo "## Test Results" > results.md
+          echo "" >> results.md
+          echo "### Test Summary" >> results.md
+          dotnet test --no-build --verbosity normal | tee -a results.md
